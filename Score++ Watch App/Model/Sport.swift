@@ -7,19 +7,16 @@
 
 import Foundation
 
-protocol Sport {
-    var id: Int { get }
-    var name: String { get }
-    var icon: String { get }
-    var isFavorite: Bool { get set }
-    var scoreGapNeeded: Int { get }
-    var winningMatch: Int { get }
-    var winningScore: Int { get }
+struct Sport: Identifiable, Hashable, Codable {
+    let id: Int
+    let name: String
+    let icon: String
+    var isFavorite: Bool
+    let scoreGapNeeded: Int
+    let type: SportType
+    let winningMatch: Int
+    let winningScore: Int
     
-    func checkScore(scores: Score) -> Int
-}
-
-extension Sport {
     func checkWinner(match: Score) -> String {
         if match.y == winningMatch {
             return "You"

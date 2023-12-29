@@ -14,13 +14,9 @@ struct FavoriteButton: View {
         Button {
             isSet.toggle()
         } label: {
-            if isSet {
-                Image(systemName: "star")
-                    .symbolVariant(/*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
-                    .foregroundStyle(.yellow)
-            } else {
-                Image(systemName: "star")
-            }
+            Label("Toggle Favorite", systemImage: isSet ? "star.fill" : "star")
+                .labelStyle(.iconOnly)
+                .foregroundStyle(isSet ? .yellow : .gray)
         }
     }
 }

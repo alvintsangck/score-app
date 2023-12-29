@@ -9,10 +9,28 @@ import Foundation
 
 @Observable
 class SportData {
-    var sports: [any Sport] = [
-        Badminton(id: 1, name: "Badminton", icon: "🏸", isFavorite: true, scoreGapNeeded: 2, winningMatch: 2, winningScore: 21),
-        PingPong(id: 2, name: "Ping Pong", icon: "🏓", isFavorite: false, scoreGapNeeded: 2, winningMatch: 3, winningScore: 11),
-        TestSport(id: 3, name: "Football", icon: "⚽️", isFavorite: false, scoreGapNeeded: 0, winningMatch: -1, winningScore: -1),
-        TestSport(id: 4, name: "Basketball", icon: "🏀", isFavorite: false, scoreGapNeeded: 0, winningMatch: -1, winningScore: -1)
-    ]
+    var sports: [Sport] = load("sportData.json")
+}
+func load<T: Decodable>(_ filename: String) -> T {
+    let data: Data
+    
+    guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
+    }
+    
+    
+    do {
+        data = try Data(contentsOf: file)
+    } catch {
+        fatalError("Couldn't load \(filename) from main bundle:\n\(error)")
+    }
+    
+    
+    do {
+        let decoder = JSONDecoder()
+        return try decoder.decode(T.self, from: data)
+    } catch {
+        fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
+    }
 }

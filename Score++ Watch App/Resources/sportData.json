@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "badminton",
+        "icon": "🏸",
+        "isFavorite": true,
+        "scoreGapNeeded": 2,
+        "type": "badminton",
+        "winningMatch": 2,
+        "winningScore": 21
+    },
+    {
+        "id": 2,
+        "name": "ping pong",
+        "icon": "🏓",
+        "isFavorite": false,
+        "scoreGapNeeded": 2,
+        "type": "pingpong",
+        "winningMatch": 3,
+        "winningScore": 11
+    },
+    {
+        "id": 3,
+        "name": "football",
+        "icon": "⚽️",
+        "isFavorite": false,
+        "scoreGapNeeded": 0,
+        "type": "football",
+        "winningMatch": 0,
+        "winningScore": 0
+    },
+    {
+        "id": 4,
+        "name": "basketball",
+        "icon": "🏀",
+        "isFavorite": false,
+        "scoreGapNeeded": 0,
+        "type": "basketball",
+        "winningMatch": 0,
+        "winningScore": 0
+    },
+]

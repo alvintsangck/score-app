@@ -10,8 +10,9 @@ import SwiftUI
 struct SportList: View {
     @Environment(SportData.self) var sportData
     @State private var showFavoritesOnly = false
+    @State private var selectedSport: Sport?
     
-    var filteredSports : [any Sport] {
+    var filteredSports : [Sport] {
         sportData.sports.filter { sport in
             (!showFavoritesOnly || sport.isFavorite)
         }
@@ -19,29 +20,26 @@ struct SportList: View {
     
     var body: some View {
         NavigationSplitView {
-            List {
+            List(selection: $selectedSport) {
                 Toggle("Favorites only", isOn: $showFavoritesOnly.animation())
                 
-                ForEach (filteredSports, id: \.id) {sport in
-                    NavigationLink {
-                        SportDetail(selectedSport: sport)
-                    } label: {
+                ForEach (filteredSports) {sport in
+                    NavigationLink(value: sport) {
                         SportRow(sport: sport)
                     }
                 }
             }
             .listStyle(.carousel)
         } detail: {
-            Text("Select Sport")
-            //            TabView(selection: $selected) {
-            //                ForEach(filteredSports) { sport in
-            //                    SportDetail(selectedSport: $selected)
-            //                        .tag(Optional(sport))
-            //                        .containerBackground(.background, for: .tabView)
-            //                }
-            //            }
+//            TabView(selection: $selectedSport) {
+//                ForEach(filteredSports) { sport in
+                    SportDetail(selectedSport: $selectedSport)
+//                        .tag(Optional(sport))
+                .containerBackground(.red.gradient, for: .navigation)
+//                }
+//            }
         }
-        //        .tabViewStyle(.verticalPage)
+//        .tabViewStyle(.verticalPage)
     }
 }
 

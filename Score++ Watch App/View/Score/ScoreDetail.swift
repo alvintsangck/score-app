@@ -15,7 +15,16 @@ struct ScoreDetail: View {
     var body: some View {
         Text("\(score, specifier: "%d")")
             .font(.largeTitle)
-            .foregroundStyle(isSelected ? .teal : .primary)
+            .foregroundStyle( isSelected ?
+                              LinearGradient(
+                                colors: [.blue, .yellow],
+                                startPoint: .top,
+                                endPoint: .bottom
+                              ) : LinearGradient(
+                                colors: [.white],
+                                startPoint: .top,
+                                endPoint: .bottom)
+            )
             .padding()
             .onTapGesture {
                 onTapped()

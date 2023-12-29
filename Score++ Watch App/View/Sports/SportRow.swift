@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct SportRow: View {
-    var sport: any Sport
+    var sport: Sport
     
     var body: some View {
         HStack {
             Text(sport.icon)
-            Text(sport.name)
+            Text(sport.name.capitalized)
             
             Spacer()
             
@@ -28,6 +28,8 @@ struct SportRow: View {
     let sports = SportData().sports
     return Group{
         SportRow(sport: sports[0])
+            .padding()
         SportRow(sport: sports[1])
+            .padding()
     }
 }

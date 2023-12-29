@@ -22,12 +22,12 @@
 		E105300E2B3C93310064EBC6 /* SportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105300D2B3C93310064EBC6 /* SportDetail.swift */; };
 		E14EF3922B3DEC8B005C79E9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3912B3DEC8B005C79E9 /* Score.swift */; };
 		E14EF3952B3E0120005C79E9 /* ScoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */; };
-		E14EF3A12B3E7C96005C79E9 /* Badminton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3A02B3E7C96005C79E9 /* Badminton.swift */; };
-		E14EF3A32B3E7CD7005C79E9 /* PingPong.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3A22B3E7CD7005C79E9 /* PingPong.swift */; };
 		E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */; };
 		E1DB39692B3F55A40048C40E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DB39682B3F55A40048C40E /* icon.png */; };
 		E1DB396A2B3F55A40048C40E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DB39682B3F55A40048C40E /* icon.png */; };
-		E1F2A99B2B3F5C1F002F5093 /* TestSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2A99A2B3F5C1F002F5093 /* TestSport.swift */; };
+		E1F2A99D2B3F607A002F5093 /* sportData.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F2A99C2B3F607A002F5093 /* sportData.json */; };
+		E1F2A99E2B3F607A002F5093 /* sportData.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F2A99C2B3F607A002F5093 /* sportData.json */; };
+		E1F2A9A02B3F671D002F5093 /* SportType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2A99F2B3F671D002F5093 /* SportType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,14 +57,14 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		E1052FF92B3C83D70064EBC6 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
 				E1052FD12B3C83D60064EBC6 /* Score++ Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -87,11 +87,10 @@
 		E105300D2B3C93310064EBC6 /* SportDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetail.swift; sourceTree = "<group>"; };
 		E14EF3912B3DEC8B005C79E9 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetail.swift; sourceTree = "<group>"; };
-		E14EF3A02B3E7C96005C79E9 /* Badminton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badminton.swift; sourceTree = "<group>"; };
-		E14EF3A22B3E7CD7005C79E9 /* PingPong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPong.swift; sourceTree = "<group>"; };
 		E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		E1DB39682B3F55A40048C40E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		E1F2A99A2B3F5C1F002F5093 /* TestSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSport.swift; sourceTree = "<group>"; };
+		E1F2A99C2B3F607A002F5093 /* sportData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sportData.json; sourceTree = "<group>"; };
+		E1F2A99F2B3F671D002F5093 /* SportType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,12 +180,10 @@
 		E10530052B3C8C7B0064EBC6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E14EF3A02B3E7C96005C79E9 /* Badminton.swift */,
-				E14EF3A22B3E7CD7005C79E9 /* PingPong.swift */,
 				E14EF3912B3DEC8B005C79E9 /* Score.swift */,
 				E10530032B3C8B0F0064EBC6 /* Sport.swift */,
 				E10530072B3C8CB50064EBC6 /* SportData.swift */,
-				E1F2A99A2B3F5C1F002F5093 /* TestSport.swift */,
+				E1F2A99F2B3F671D002F5093 /* SportType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,9 +218,9 @@
 		E1826FBF2B3CEEA6002C20A0 /* Sports */ = {
 			isa = PBXGroup;
 			children = (
-				E10530092B3C8ECA0064EBC6 /* SportRow.swift */,
-				E105300B2B3C91330064EBC6 /* SportList.swift */,
 				E105300D2B3C93310064EBC6 /* SportDetail.swift */,
+				E105300B2B3C91330064EBC6 /* SportList.swift */,
+				E10530092B3C8ECA0064EBC6 /* SportRow.swift */,
 			);
 			path = Sports;
 			sourceTree = "<group>";
@@ -231,6 +228,7 @@
 		E1DB39612B3F55260048C40E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1F2A99C2B3F607A002F5093 /* sportData.json */,
 				E1DB39682B3F55A40048C40E /* icon.png */,
 			);
 			path = Resources;
@@ -362,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DB39692B3F55A40048C40E /* icon.png in Resources */,
+				E1F2A99D2B3F607A002F5093 /* sportData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1052FDD2B3C83D70064EBC6 /* Preview Assets.xcassets in Resources */,
+				E1F2A99E2B3F607A002F5093 /* sportData.json in Resources */,
 				E1052FDA2B3C83D70064EBC6 /* Assets.xcassets in Resources */,
 				E1DB396A2B3F55A40048C40E /* icon.png in Resources */,
 			);
@@ -400,14 +400,12 @@
 				E1052FD82B3C83D60064EBC6 /* ContentView.swift in Sources */,
 				E105300E2B3C93310064EBC6 /* SportDetail.swift in Sources */,
 				E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */,
-				E14EF3A32B3E7CD7005C79E9 /* PingPong.swift in Sources */,
 				E105300C2B3C91330064EBC6 /* SportList.swift in Sources */,
 				E10530042B3C8B0F0064EBC6 /* Sport.swift in Sources */,
-				E1F2A99B2B3F5C1F002F5093 /* TestSport.swift in Sources */,
+				E1F2A9A02B3F671D002F5093 /* SportType.swift in Sources */,
 				E105300A2B3C8ECA0064EBC6 /* SportRow.swift in Sources */,
 				E14EF3922B3DEC8B005C79E9 /* Score.swift in Sources */,
 				E1052FD62B3C83D60064EBC6 /* Score__App.swift in Sources */,
-				E14EF3A12B3E7C96005C79E9 /* Badminton.swift in Sources */,
 				E14EF3952B3E0120005C79E9 /* ScoreDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
