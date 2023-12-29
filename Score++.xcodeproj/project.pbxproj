@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1052FD12B3C83D60064EBC6 /* Score++ Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E1052FD02B3C83D60064EBC6 /* Score++ Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1052FD62B3C83D60064EBC6 /* Score__App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1052FD52B3C83D60064EBC6 /* Score__App.swift */; };
+		E1052FD82B3C83D60064EBC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1052FD72B3C83D60064EBC6 /* ContentView.swift */; };
+		E1052FDA2B3C83D70064EBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1052FD92B3C83D70064EBC6 /* Assets.xcassets */; };
+		E1052FDD2B3C83D70064EBC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1052FDC2B3C83D70064EBC6 /* Preview Assets.xcassets */; };
+		E1052FE72B3C83D70064EBC6 /* Score___Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1052FE62B3C83D70064EBC6 /* Score___Watch_AppTests.swift */; };
+		E1052FF12B3C83D70064EBC6 /* Score___Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1052FF02B3C83D70064EBC6 /* Score___Watch_AppUITests.swift */; };
+		E1052FF32B3C83D70064EBC6 /* Score___Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1052FF22B3C83D70064EBC6 /* Score___Watch_AppUITestsLaunchTests.swift */; };
+		E10530042B3C8B0F0064EBC6 /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10530032B3C8B0F0064EBC6 /* Sport.swift */; };
+		E10530082B3C8CB50064EBC6 /* SportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10530072B3C8CB50064EBC6 /* SportData.swift */; };
+		E105300A2B3C8ECA0064EBC6 /* SportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10530092B3C8ECA0064EBC6 /* SportRow.swift */; };
+		E105300C2B3C91330064EBC6 /* SportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105300B2B3C91330064EBC6 /* SportList.swift */; };
+		E105300E2B3C93310064EBC6 /* SportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105300D2B3C93310064EBC6 /* SportDetail.swift */; };
+		E14EF3922B3DEC8B005C79E9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3912B3DEC8B005C79E9 /* Score.swift */; };
+		E14EF3952B3E0120005C79E9 /* ScoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */; };
+		E14EF3A12B3E7C96005C79E9 /* Badminton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3A02B3E7C96005C79E9 /* Badminton.swift */; };
+		E14EF3A32B3E7CD7005C79E9 /* PingPong.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3A22B3E7CD7005C79E9 /* PingPong.swift */; };
+		E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */; };
+		E1DB39692B3F55A40048C40E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DB39682B3F55A40048C40E /* icon.png */; };
+		E1DB396A2B3F55A40048C40E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DB39682B3F55A40048C40E /* icon.png */; };
+		E1F2A99B2B3F5C1F002F5093 /* TestSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2A99A2B3F5C1F002F5093 /* TestSport.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1052FD22B3C83D60064EBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1052FC42B3C83D50064EBC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1052FCF2B3C83D60064EBC6;
+			remoteInfo = "score++ Watch App";
+		};
+		E1052FE32B3C83D70064EBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1052FC42B3C83D50064EBC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1052FCF2B3C83D60064EBC6;
+			remoteInfo = "score++ Watch App";
+		};
+		E1052FED2B3C83D70064EBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1052FC42B3C83D50064EBC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1052FCF2B3C83D60064EBC6;
+			remoteInfo = "score++ Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1052FF92B3C83D70064EBC6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E1052FD12B3C83D60064EBC6 /* Score++ Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E1052FCA2B3C83D60064EBC6 /* Score++.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score++.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1052FD02B3C83D60064EBC6 /* Score++ Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Score++ Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1052FD52B3C83D60064EBC6 /* Score__App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score__App.swift; sourceTree = "<group>"; };
+		E1052FD72B3C83D60064EBC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1052FD92B3C83D70064EBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1052FDC2B3C83D70064EBC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1052FE22B3C83D70064EBC6 /* Score++ Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score++ Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1052FE62B3C83D70064EBC6 /* Score___Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Score___Watch_AppTests.swift"; sourceTree = "<group>"; };
+		E1052FEC2B3C83D70064EBC6 /* Score++ Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Score++ Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1052FF02B3C83D70064EBC6 /* Score___Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Score___Watch_AppUITests.swift"; sourceTree = "<group>"; };
+		E1052FF22B3C83D70064EBC6 /* Score___Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Score___Watch_AppUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		E10530032B3C8B0F0064EBC6 /* Sport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		E10530072B3C8CB50064EBC6 /* SportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportData.swift; sourceTree = "<group>"; };
+		E10530092B3C8ECA0064EBC6 /* SportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportRow.swift; sourceTree = "<group>"; };
+		E105300B2B3C91330064EBC6 /* SportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportList.swift; sourceTree = "<group>"; };
+		E105300D2B3C93310064EBC6 /* SportDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetail.swift; sourceTree = "<group>"; };
+		E14EF3912B3DEC8B005C79E9 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetail.swift; sourceTree = "<group>"; };
+		E14EF3A02B3E7C96005C79E9 /* Badminton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badminton.swift; sourceTree = "<group>"; };
+		E14EF3A22B3E7CD7005C79E9 /* PingPong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingPong.swift; sourceTree = "<group>"; };
+		E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		E1DB39682B3F55A40048C40E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E1F2A99A2B3F5C1F002F5093 /* TestSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSport.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1052FCD2B3C83D60064EBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FDF2B3C83D70064EBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FE92B3C83D70064EBC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1052FC32B3C83D50064EBC6 = {
+			isa = PBXGroup;
+			children = (
+				E1052FD42B3C83D60064EBC6 /* Score++ Watch App */,
+				E1052FE52B3C83D70064EBC6 /* Score++ Watch AppTests */,
+				E1052FEF2B3C83D70064EBC6 /* Score++ Watch AppUITests */,
+				E1052FCB2B3C83D60064EBC6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1052FCB2B3C83D60064EBC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1052FCA2B3C83D60064EBC6 /* Score++.app */,
+				E1052FD02B3C83D60064EBC6 /* Score++ Watch App.app */,
+				E1052FE22B3C83D70064EBC6 /* Score++ Watch AppTests.xctest */,
+				E1052FEC2B3C83D70064EBC6 /* Score++ Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1052FD42B3C83D60064EBC6 /* Score++ Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				E1052FD92B3C83D70064EBC6 /* Assets.xcassets */,
+				E10530052B3C8C7B0064EBC6 /* Model */,
+				E1052FDB2B3C83D70064EBC6 /* Preview Content */,
+				E1DB39612B3F55260048C40E /* Resources */,
+				E1052FD52B3C83D60064EBC6 /* Score__App.swift */,
+				E10530062B3C8C970064EBC6 /* View */,
+			);
+			path = "Score++ Watch App";
+			sourceTree = "<group>";
+		};
+		E1052FDB2B3C83D70064EBC6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1052FDC2B3C83D70064EBC6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1052FE52B3C83D70064EBC6 /* Score++ Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1052FE62B3C83D70064EBC6 /* Score___Watch_AppTests.swift */,
+			);
+			path = "Score++ Watch AppTests";
+			sourceTree = "<group>";
+		};
+		E1052FEF2B3C83D70064EBC6 /* Score++ Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1052FF02B3C83D70064EBC6 /* Score___Watch_AppUITests.swift */,
+				E1052FF22B3C83D70064EBC6 /* Score___Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "Score++ Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		E10530052B3C8C7B0064EBC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E14EF3A02B3E7C96005C79E9 /* Badminton.swift */,
+				E14EF3A22B3E7CD7005C79E9 /* PingPong.swift */,
+				E14EF3912B3DEC8B005C79E9 /* Score.swift */,
+				E10530032B3C8B0F0064EBC6 /* Sport.swift */,
+				E10530072B3C8CB50064EBC6 /* SportData.swift */,
+				E1F2A99A2B3F5C1F002F5093 /* TestSport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E10530062B3C8C970064EBC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1052FD72B3C83D60064EBC6 /* ContentView.swift */,
+				E1826FBE2B3CEE8C002C20A0 /* Helper */,
+				E14EF3932B3E0111005C79E9 /* Score */,
+				E1826FBF2B3CEEA6002C20A0 /* Sports */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E14EF3932B3E0111005C79E9 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		E1826FBE2B3CEE8C002C20A0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E1826FBF2B3CEEA6002C20A0 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				E10530092B3C8ECA0064EBC6 /* SportRow.swift */,
+				E105300B2B3C91330064EBC6 /* SportList.swift */,
+				E105300D2B3C93310064EBC6 /* SportDetail.swift */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		E1DB39612B3F55260048C40E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1DB39682B3F55A40048C40E /* icon.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1052FC92B3C83D60064EBC6 /* Score++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1052FFA2B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++" */;
+			buildPhases = (
+				E1052FC82B3C83D60064EBC6 /* Resources */,
+				E1052FF92B3C83D70064EBC6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1052FD32B3C83D60064EBC6 /* PBXTargetDependency */,
+			);
+			name = "Score++";
+			productName = "score++";
+			productReference = E1052FCA2B3C83D60064EBC6 /* Score++.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		E1052FCF2B3C83D60064EBC6 /* Score++ Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1052FF62B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++ Watch App" */;
+			buildPhases = (
+				E1052FCC2B3C83D60064EBC6 /* Sources */,
+				E1052FCD2B3C83D60064EBC6 /* Frameworks */,
+				E1052FCE2B3C83D60064EBC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Score++ Watch App";
+			productName = "score++ Watch App";
+			productReference = E1052FD02B3C83D60064EBC6 /* Score++ Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1052FE12B3C83D70064EBC6 /* Score++ Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1052FFD2B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++ Watch AppTests" */;
+			buildPhases = (
+				E1052FDE2B3C83D70064EBC6 /* Sources */,
+				E1052FDF2B3C83D70064EBC6 /* Frameworks */,
+				E1052FE02B3C83D70064EBC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1052FE42B3C83D70064EBC6 /* PBXTargetDependency */,
+			);
+			name = "Score++ Watch AppTests";
+			productName = "score++ Watch AppTests";
+			productReference = E1052FE22B3C83D70064EBC6 /* Score++ Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1052FEB2B3C83D70064EBC6 /* Score++ Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10530002B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++ Watch AppUITests" */;
+			buildPhases = (
+				E1052FE82B3C83D70064EBC6 /* Sources */,
+				E1052FE92B3C83D70064EBC6 /* Frameworks */,
+				E1052FEA2B3C83D70064EBC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1052FEE2B3C83D70064EBC6 /* PBXTargetDependency */,
+			);
+			name = "Score++ Watch AppUITests";
+			productName = "score++ Watch AppUITests";
+			productReference = E1052FEC2B3C83D70064EBC6 /* Score++ Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1052FC42B3C83D50064EBC6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					E1052FC92B3C83D60064EBC6 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					E1052FCF2B3C83D60064EBC6 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					E1052FE12B3C83D70064EBC6 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = E1052FCF2B3C83D60064EBC6;
+					};
+					E1052FEB2B3C83D70064EBC6 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = E1052FCF2B3C83D60064EBC6;
+					};
+				};
+			};
+			buildConfigurationList = E1052FC72B3C83D50064EBC6 /* Build configuration list for PBXProject "Score++" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1052FC32B3C83D50064EBC6;
+			productRefGroup = E1052FCB2B3C83D60064EBC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1052FC92B3C83D60064EBC6 /* Score++ */,
+				E1052FCF2B3C83D60064EBC6 /* Score++ Watch App */,
+				E1052FE12B3C83D70064EBC6 /* Score++ Watch AppTests */,
+				E1052FEB2B3C83D70064EBC6 /* Score++ Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1052FC82B3C83D60064EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1DB39692B3F55A40048C40E /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FCE2B3C83D60064EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1052FDD2B3C83D70064EBC6 /* Preview Assets.xcassets in Resources */,
+				E1052FDA2B3C83D70064EBC6 /* Assets.xcassets in Resources */,
+				E1DB396A2B3F55A40048C40E /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FE02B3C83D70064EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FEA2B3C83D70064EBC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1052FCC2B3C83D60064EBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10530082B3C8CB50064EBC6 /* SportData.swift in Sources */,
+				E1052FD82B3C83D60064EBC6 /* ContentView.swift in Sources */,
+				E105300E2B3C93310064EBC6 /* SportDetail.swift in Sources */,
+				E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */,
+				E14EF3A32B3E7CD7005C79E9 /* PingPong.swift in Sources */,
+				E105300C2B3C91330064EBC6 /* SportList.swift in Sources */,
+				E10530042B3C8B0F0064EBC6 /* Sport.swift in Sources */,
+				E1F2A99B2B3F5C1F002F5093 /* TestSport.swift in Sources */,
+				E105300A2B3C8ECA0064EBC6 /* SportRow.swift in Sources */,
+				E14EF3922B3DEC8B005C79E9 /* Score.swift in Sources */,
+				E1052FD62B3C83D60064EBC6 /* Score__App.swift in Sources */,
+				E14EF3A12B3E7C96005C79E9 /* Badminton.swift in Sources */,
+				E14EF3952B3E0120005C79E9 /* ScoreDetail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FDE2B3C83D70064EBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1052FE72B3C83D70064EBC6 /* Score___Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1052FE82B3C83D70064EBC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1052FF12B3C83D70064EBC6 /* Score___Watch_AppUITests.swift in Sources */,
+				E1052FF32B3C83D70064EBC6 /* Score___Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1052FD32B3C83D60064EBC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1052FCF2B3C83D60064EBC6 /* Score++ Watch App */;
+			targetProxy = E1052FD22B3C83D60064EBC6 /* PBXContainerItemProxy */;
+		};
+		E1052FE42B3C83D70064EBC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1052FCF2B3C83D60064EBC6 /* Score++ Watch App */;
+			targetProxy = E1052FE32B3C83D70064EBC6 /* PBXContainerItemProxy */;
+		};
+		E1052FEE2B3C83D70064EBC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1052FCF2B3C83D60064EBC6 /* Score++ Watch App */;
+			targetProxy = E1052FED2B3C83D70064EBC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E1052FF42B3C83D70064EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1052FF52B3C83D70064EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E1052FF72B3C83D70064EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Score++ Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score++";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score--.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		E1052FF82B3C83D70064EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Score++ Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score++";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score--.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		E1052FFB2B3C83D70064EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score++";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E1052FFC2B3C83D70064EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				INFOPLIST_KEY_CFBundleDisplayName = "Score++";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1052FFE2B3C83D70064EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score---Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score++ Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Score++ Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		E1052FFF2B3C83D70064EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score---Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Score++ Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Score++ Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		E10530012B3C83D70064EBC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score---Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Score++ Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		E10530022B3C83D70064EBC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4652SCA26A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.score---Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Score++ Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1052FC72B3C83D50064EBC6 /* Build configuration list for PBXProject "Score++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1052FF42B3C83D70064EBC6 /* Debug */,
+				E1052FF52B3C83D70064EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1052FF62B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++ Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1052FF72B3C83D70064EBC6 /* Debug */,
+				E1052FF82B3C83D70064EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1052FFA2B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1052FFB2B3C83D70064EBC6 /* Debug */,
+				E1052FFC2B3C83D70064EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1052FFD2B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++ Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1052FFE2B3C83D70064EBC6 /* Debug */,
+				E1052FFF2B3C83D70064EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10530002B3C83D70064EBC6 /* Build configuration list for PBXNativeTarget "Score++ Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10530012B3C83D70064EBC6 /* Debug */,
+				E10530022B3C83D70064EBC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1052FC42B3C83D50064EBC6 /* Project object */;
+}
