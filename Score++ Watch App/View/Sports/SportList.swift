@@ -31,15 +31,16 @@ struct SportList: View {
             }
             .listStyle(.carousel)
         } detail: {
-//            TabView(selection: $selectedSport) {
-//                ForEach(filteredSports) { sport in
+            // TODO: fix rerender
+            TabView(selection: $selectedSport) {
+                ForEach(filteredSports) { sport in
                     SportDetail(selectedSport: $selectedSport)
-//                        .tag(Optional(sport))
-                .containerBackground(.red.gradient, for: .navigation)
-//                }
-//            }
+                        .tag(Optional(sport))
+                        .containerBackground(.background, for: .tabView)
+                }
+            }
         }
-//        .tabViewStyle(.verticalPage)
+        .tabViewStyle(.verticalPage)
     }
 }
 
