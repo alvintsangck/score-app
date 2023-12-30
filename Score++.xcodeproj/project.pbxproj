@@ -20,6 +20,7 @@
 		E105300A2B3C8ECA0064EBC6 /* SportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10530092B3C8ECA0064EBC6 /* SportRow.swift */; };
 		E105300C2B3C91330064EBC6 /* SportList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105300B2B3C91330064EBC6 /* SportList.swift */; };
 		E105300E2B3C93310064EBC6 /* SportDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E105300D2B3C93310064EBC6 /* SportDetail.swift */; };
+		E126C98E2B3FF0A7001CC626 /* MatchDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126C98D2B3FF0A7001CC626 /* MatchDetail.swift */; };
 		E14EF3922B3DEC8B005C79E9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3912B3DEC8B005C79E9 /* Score.swift */; };
 		E14EF3952B3E0120005C79E9 /* ScoreDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */; };
 		E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */; };
@@ -86,6 +87,7 @@
 		E10530092B3C8ECA0064EBC6 /* SportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportRow.swift; sourceTree = "<group>"; };
 		E105300B2B3C91330064EBC6 /* SportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportList.swift; sourceTree = "<group>"; };
 		E105300D2B3C93310064EBC6 /* SportDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportDetail.swift; sourceTree = "<group>"; };
+		E126C98D2B3FF0A7001CC626 /* MatchDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchDetail.swift; sourceTree = "<group>"; };
 		E14EF3912B3DEC8B005C79E9 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDetail.swift; sourceTree = "<group>"; };
 		E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				E14EF3942B3E0120005C79E9 /* ScoreDetail.swift */,
+				E126C98D2B3FF0A7001CC626 /* MatchDetail.swift */,
 			);
 			path = Score;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				E105300E2B3C93310064EBC6 /* SportDetail.swift in Sources */,
 				E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */,
 				E1CE88752B3FD6E9003A1A21 /* SportToolBar.swift in Sources */,
+				E126C98E2B3FF0A7001CC626 /* MatchDetail.swift in Sources */,
 				E105300C2B3C91330064EBC6 /* SportList.swift in Sources */,
 				E10530042B3C8B0F0064EBC6 /* Sport.swift in Sources */,
 				E1F2A9A02B3F671D002F5093 /* SportType.swift in Sources */,

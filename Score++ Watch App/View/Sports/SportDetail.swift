@@ -21,14 +21,7 @@ struct SportDetail: View {
                     if !matchWinner.isEmpty {
                         Text("\(selectedSport.icon)\(matchWinner) Win!")
                     } else {
-                        HStack {
-                            Text("\(match.y)")
-                                .font(.title)
-                            Text(selectedSport.icon)
-                                .font(.title)
-                            Text("\(match.o)")
-                                .font(.title)
-                        }
+                        MatchDetail(match: match, selectedSport: selectedSport, matchWinner: matchWinner)
                         
                         HStack {
                             ScoreDetail(score: $scores.y, isSelected: selectedPlayer == 1) {
