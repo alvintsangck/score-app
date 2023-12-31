@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct MatchView: View {
-    let match: Match
-    var selectedSport: Sport
+    @Binding var match: Match
+    var sport: Sport
     
     var body: some View {
         if match.winner.isEmpty {
-            HStack {
-                Text("\(match.y)")
-                    .font(.title)
-                Text(selectedSport.icon)
-                    .font(.title)
-                Text("\(match.o)")
-                    .font(.title)
+            VStack {
+                HStack {
+                    Text("\(match.scores.teamOneScore)")
+                        .font(.title)
+                    Text(sport.icon)
+                        .font(.title)
+                    Text("\(match.scores.teamTwoScore)")
+                        .font(.title)
+                }
+                
+                ScoreView(scores: match.currentMatch)
             }
         } else {
             EmptyView()
@@ -28,5 +32,5 @@ struct MatchView: View {
 }
 
 #Preview {
-    MatchView(match: Match(y: 1, o: 0,winner: ""), selectedSport: SportData().sports[0])
+    MatchView(match: .constant(Match(scores: Scores(teamOneScore: 2, teamTwoScore: 1), currentMatch: Scores.new(), winner: "")), sport: (SportData().sports[0]))
 }

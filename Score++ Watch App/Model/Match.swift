@@ -8,18 +8,18 @@
 import Foundation
 
 struct Match {
-    var y: Int
-    var o: Int
+    var scores: Scores
+    var currentMatch: Scores
     var winner: String
 
     static func new() -> Match {
-        return Match(y: 0, o: 0, winner: "")
+        return Match(scores: Scores.new(), currentMatch: Scores.new(), winner: "")
     }
     
     func checkWinner(winningMatch: Int) -> String {
-        if y == winningMatch {
+        if scores.teamOneScore == winningMatch {
             return "You"
-        } else if o == winningMatch {
+        } else if scores.teamTwoScore == winningMatch {
             return "Opponent"
         } else {
             return ""

@@ -13,7 +13,7 @@
         "id": 2,
         "name": "ping pong",
         "icon": "🏓",
-        "isFavorite": false,
+        "isFavorite": true,
         "scoreGapNeeded": 2,
         "type": "pingpong",
         "winningMatch": 3,
@@ -26,7 +26,7 @@
         "isFavorite": false,
         "scoreGapNeeded": 0,
         "type": "football",
-        "winningMatch": 0,
+        "winningMatch": -1,
         "winningScore": 0
     },
     {
@@ -36,7 +36,7 @@
         "isFavorite": false,
         "scoreGapNeeded": 0,
         "type": "basketball",
-        "winningMatch": 0,
+        "winningMatch": -1,
         "winningScore": 0
     },
 ]

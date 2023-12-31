@@ -8,43 +8,44 @@
 import SwiftUI
 
 struct SportView: View {
-    @State private var scores = Score(y: 0, o: 0)
-    @State private var selectedPlayer = 1
-    @State private var match = Match(y: 0, o: 0, winner: "")
-    @Binding var selectedSport: Sport?
+    @State private var match = Match.new()
+    var sport: Sport
     
     var body: some View {
-        if let selectedSport = selectedSport {
             NavigationStack {
                 VStack {
                     if !match.winner.isEmpty {
-                        Text("\(selectedSport.icon)\(match.winner) Win!")
+                        Text("\(sport.icon)\(match.winner) Win!")
                     } else {
-                        MatchView(match: match, selectedSport: selectedSport)
-                        
-                        HStack {
-                            ScoreView(playerScore: $scores.y, scores: $scores, match: $match, selectedSport: selectedSport)
+                        ZStack {
+                            MatchView(match: $match, sport: sport)
                             
-                            Text(":")
-                                .font(.largeTitle)
-                                .baselineOffset(6)
-                            
-                            ScoreView(playerScore: $scores.o, scores: $scores, match: $match, selectedSport: selectedSport)
+                            HStack {
+                                SportViewGesture(playerScore: $match.currentMatch.teamOneScore, match: $match, sport: sport)
+                                SportViewGesture(playerScore: $match.currentMatch.teamTwoScore, match: $match, sport: sport)
+                            }
+                            .containerBackground(
+                                LinearGradient(colors: [.blue, .red], startPoint: .leading, endPoint: .trailing)
+                                    .opacity(0.4),
+                                for: .navigation)
                         }
                     }
                 }
                 .toolbar {
-                    SportToolBar(scores: $scores, match: $match, selectedSport: selectedSport)
+                    SportToolBar(match: $match, selectedSport: sport)
                 }
             }
-        }else {
-            Text("No Sport Selected")
-        }
     }
 }
 
 #Preview {
     let sportData = SportData()
-    return SportView(selectedSport: .constant(sportData.sports[1]))
+    return SportView(sport: sportData.sports[0])
+        .environment(sportData)
+}
+
+#Preview {
+    let sportData = SportData()
+    return SportView(sport: sportData.sports[1])
         .environment(sportData)
 }

@@ -9,30 +9,28 @@ import SwiftUI
 
 struct SportToolBar: ToolbarContent {
     @Environment(SportData.self) var sportData
-    @Binding var scores: Score
     @Binding var match: Match
     var selectedSport: Sport
     
     var body: some ToolbarContent {
-            @Bindable var sportData = sportData
-            
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Reset Match", systemImage: "arrow.circlepath", role: .destructive) {
-                    scores = Score.new()
-                    match = Match.new()
-                }
-                .labelStyle(.iconOnly)
-                .foregroundStyle(.red)
+        @Bindable var sportData = sportData
+        
+        ToolbarItem(placement: .topBarTrailing) {
+            var sportIndex: Int {
+                sportData.sports.firstIndex(where: { $0.id == selectedSport.id })!
             }
             
-            ToolbarItemGroup(placement: .bottomBar) {
-                var sportIndex: Int {
-                    sportData.sports.firstIndex(where: { $0.id == selectedSport.id })!
-                }
-                
-                FavoriteButton(isSet: $sportData.sports[sportIndex].isFavorite) {
-                    save(sportData.sports)
-                }
+            FavoriteButton(isSet: $sportData.sports[sportIndex].isFavorite) {
+                saveFavorite(sportData.sports[sportIndex].isFavorite, id: selectedSport.id)
             }
+        }
+        
+        ToolbarItem(placement: .bottomBar) {
+            Button("Reset Match", systemImage: "arrow.circlepath", role: .destructive) {
+                match = Match.new()
+            }
+            .foregroundStyle(.red)
+            .labelStyle(.iconOnly)
+        }
     }
 }
