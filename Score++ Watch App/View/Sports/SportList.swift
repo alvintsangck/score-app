@@ -34,7 +34,7 @@ struct SportList: View {
             // TODO: fix rerender
             TabView(selection: $selectedSport) {
                 ForEach(filteredSports) { sport in
-                    SportDetail(selectedSport: $selectedSport)
+                    SportView(selectedSport: $selectedSport)
                         .tag(Optional(sport))
                         .containerBackground(.background, for: .tabView)
                 }

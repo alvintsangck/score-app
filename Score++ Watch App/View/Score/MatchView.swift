@@ -7,13 +7,12 @@
 
 import SwiftUI
 
-struct MatchDetail: View {
-    let match: Score
+struct MatchView: View {
+    let match: Match
     var selectedSport: Sport
-    let matchWinner: String
     
     var body: some View {
-        if matchWinner.isEmpty {
+        if match.winner.isEmpty {
             HStack {
                 Text("\(match.y)")
                     .font(.title)
@@ -22,10 +21,12 @@ struct MatchDetail: View {
                 Text("\(match.o)")
                     .font(.title)
             }
+        } else {
+            EmptyView()
         }
     }
 }
 
 #Preview {
-    MatchDetail(match: Score(y: 1, o: 0), selectedSport: SportData().sports[0], matchWinner: "")
+    MatchView(match: Match(y: 1, o: 0,winner: ""), selectedSport: SportData().sports[0])
 }

@@ -17,13 +17,10 @@ struct Sport: Identifiable, Hashable, Codable {
     let winningMatch: Int
     let winningScore: Int
     
-    func checkWinner(match: Score) -> String {
-        if match.y == winningMatch {
-            return "You"
-        } else if match.o == winningMatch {
-            return "Opponent"
-        } else {
-            return ""
-        }
+    enum SportType: String, Codable {
+        case badminton
+        case pingpong
+        case football
+        case basketball
     }
 }
