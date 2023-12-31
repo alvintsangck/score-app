@@ -16,6 +16,8 @@ struct FavoriteButton: View {
             isSet.toggle()
             save()
         }
+        .foregroundStyle(.yellow)
+        .labelStyle(.iconOnly)
     }
 }
 
