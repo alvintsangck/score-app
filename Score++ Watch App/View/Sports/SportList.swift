@@ -31,12 +31,8 @@ struct SportList: View {
             }
             .listStyle(.carousel)
         } detail: {
-            // TODO: fix rerender
-            TabView(selection: $selected) {
-                ForEach(filteredSports) { sport in
-                    SportView(sport: sport)
-                        .tag(Optional(sport))
-                }
+            if let sport = selected {
+                SportView(sport: sport)
             }
         }
         .tabViewStyle(.verticalPage)
