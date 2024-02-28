@@ -10,5 +10,5 @@ import Foundation
 struct SportPreference: Codable {
     let id: Int
     var isFavorite: Bool
-    var backgroundColor: String
+    var backgroundColor: [String]
 }

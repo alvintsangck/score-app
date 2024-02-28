@@ -8,22 +8,37 @@
 import Foundation
 
 func saveFavorite(_ isFavorite: Bool, id: Int) -> Void {
-    var preferences = UserDefaults.standard.array(forKey: "preference") as? [SportPreference] ?? []
-    if let index = preferences.firstIndex(where: { $0.id == id }) {
-        let updatedPreference = SportPreference(id: id, isFavorite: isFavorite, backgroundColor: preferences[index].backgroundColor)
-        preferences[index] = updatedPreference
-
-        UserDefaults.standard.set(preferences, forKey: "preference")
+    let data = UserDefaults.standard.data(forKey: "preference")!
+    var preferences = try? JSONDecoder().decode([SportPreference].self, from: data)
+    if let index = preferences?.firstIndex(where: { $0.id == id }) {
+        preferences?[index].isFavorite = isFavorite
+    } else {
+        preferences?.append(SportPreference(id: id, isFavorite: isFavorite, backgroundColor: ["#000000", "#000000"]))
     }
+    let saveData = try? JSONEncoder().encode(preferences)
+    UserDefaults.standard.set(saveData, forKey: "preference")
+}
+
+func saveBackgroundColor(_ hexColors: [String?], id: Int) -> Void {
+    let data = UserDefaults.standard.data(forKey: "preference")!
+    var preferences = try? JSONDecoder().decode([SportPreference].self, from: data)
+    if let index = preferences?.firstIndex(where: { $0.id == id }) {
+        preferences?[index].backgroundColor = hexColors.compactMap{ $0 }
+    } else {
+        preferences?.append(SportPreference(id: id, isFavorite: false, backgroundColor: hexColors.compactMap{ $0 }))
+    }
+    let saveData = try? JSONEncoder().encode(preferences)
+    UserDefaults.standard.set(saveData, forKey: "preference")
 }
 
 func load(_ filename: String, key: String) -> [Sport] {
     var sports: [Sport] = loadFromFile(filename)
-    let favoriteSports = UserDefaults.standard.array(forKey: key) as? [SportPreference] ?? []
-    
+    guard let data = UserDefaults.standard.data(forKey: "preference") else { return sports }
+    let preferences = try? JSONDecoder().decode([SportPreference].self, from: data)
     for i in 0..<sports.count {
-        if let favoriteSport = favoriteSports.first(where: { $0.id == sports[i].id }) {
-            sports[i].isFavorite = favoriteSport.isFavorite
+        if let preference = preferences?.first(where: { $0.id == sports[i].id }) {
+            sports[i].isFavorite = preference.isFavorite
+            sports[i].backgroundColor = preference.backgroundColor
         }
     }
     

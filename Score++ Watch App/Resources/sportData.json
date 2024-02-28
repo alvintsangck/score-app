@@ -4,6 +4,7 @@
         "name": "badminton",
         "icon": "🏸",
         "isFavorite": true,
+        "backgroundColor": ["#000000", "#000000"],
         "scoreGapNeeded": 2,
         "type": "badminton",
         "winningMatch": 2,
@@ -14,6 +15,7 @@
         "name": "ping pong",
         "icon": "🏓",
         "isFavorite": true,
+        "backgroundColor": ["#000000", "#000000"],
         "scoreGapNeeded": 2,
         "type": "pingpong",
         "winningMatch": 3,
@@ -24,6 +26,7 @@
         "name": "football",
         "icon": "⚽️",
         "isFavorite": false,
+        "backgroundColor": ["#000000", "#000000"],
         "scoreGapNeeded": 0,
         "type": "football",
         "winningMatch": -1,
@@ -31,12 +34,13 @@
     },
     {
         "id": 4,
-        "name": "basketball",
-        "icon": "🏀",
+        "name": "tennis",
+        "icon": "🎾",
         "isFavorite": false,
-        "scoreGapNeeded": 0,
+        "backgroundColor": ["#000000", "#000000"],
+        "scoreGapNeeded": 1,
         "type": "basketball",
-        "winningMatch": -1,
-        "winningScore": 0
+        "winningMatch": 2,
+        "winningScore": 60
     },
 ]

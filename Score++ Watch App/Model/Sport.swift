@@ -12,6 +12,7 @@ struct Sport: Identifiable, Hashable, Codable {
     let name: String
     let icon: String
     var isFavorite: Bool
+    var backgroundColor: [String]
     let scoreGapNeeded: Int
     let type: SportType
     let winningMatch: Int

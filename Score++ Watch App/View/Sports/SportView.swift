@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct SportView: View {
+    @Environment(SportData.self) var sportData
     @State private var match = Match.new()
+    @State private var isSettingOn = false
     var sport: Sport
     
+
     var body: some View {
+        @Bindable var sportData = sportData
+        var sportIndex: Int {
+            sportData.sports.firstIndex(where: { $0.id == sport.id })!
+        }
+        
         NavigationStack {
             VStack {
                 if !match.winner.isEmpty {
@@ -25,14 +33,14 @@ struct SportView: View {
                             SportViewGesture(playerScore: $match.currentMatch.teamTwoScore, match: $match, sport: sport)
                         }
                         .containerBackground(
-                            LinearGradient(colors: [.blue, .red], startPoint: .leading, endPoint: .trailing)
+                            LinearGradient(colors: sportData.sports[sportIndex].backgroundColor.compactMap{Color(hex: $0)}, startPoint: .leading, endPoint: .trailing)
                                 .opacity(0.4),
                             for: .navigation)
                     }
                 }
             }
             .toolbar {
-                SportToolBar(match: $match, selectedSport: sport)
+                SportToolBar(match: $match, isSettingOn: $isSettingOn, selectedSport: sport)
             }
         }
     }

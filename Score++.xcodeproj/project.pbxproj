@@ -23,6 +23,7 @@
 		E126C98E2B3FF0A7001CC626 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E126C98D2B3FF0A7001CC626 /* MatchView.swift */; };
 		E14EF3922B3DEC8B005C79E9 /* Scores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3912B3DEC8B005C79E9 /* Scores.swift */; };
 		E14EF3952B3E0120005C79E9 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14EF3942B3E0120005C79E9 /* ScoreView.swift */; };
+		E17DBD712B86DE0400718084 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17DBD702B86DE0400718084 /* SettingsView.swift */; };
 		E1826FBD2B3CEC9D002C20A0 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */; };
 		E192C1EE2B412EED000A31FC /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192C1ED2B412EED000A31FC /* Match.swift */; };
 		E192C1F02B414BDC000A31FC /* SportViewGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192C1EF2B414BDC000A31FC /* SportViewGesture.swift */; };
@@ -30,6 +31,7 @@
 		E19843902B41C39B009E396D /* SportPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = E198438F2B41C39B009E396D /* SportPreference.swift */; };
 		E19843922B41D17E009E396D /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19843912B41D17E009E396D /* DataStorage.swift */; };
 		E19843942B41DECA009E396D /* ItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19843932B41DECA009E396D /* ItemList.swift */; };
+		E1B38C2C2B898062000470C9 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B38C2B2B898062000470C9 /* Extentions.swift */; };
 		E1CE88752B3FD6E9003A1A21 /* SportToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CE88742B3FD6E8003A1A21 /* SportToolBar.swift */; };
 		E1DB39692B3F55A40048C40E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DB39682B3F55A40048C40E /* icon.png */; };
 		E1DB396A2B3F55A40048C40E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DB39682B3F55A40048C40E /* icon.png */; };
@@ -92,9 +94,11 @@
 		E10530092B3C8ECA0064EBC6 /* SportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportRow.swift; sourceTree = "<group>"; };
 		E105300B2B3C91330064EBC6 /* SportList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportList.swift; sourceTree = "<group>"; };
 		E105300D2B3C93310064EBC6 /* SportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportView.swift; sourceTree = "<group>"; };
+		E11A95442B42865D00F9D1FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E126C98D2B3FF0A7001CC626 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
 		E14EF3912B3DEC8B005C79E9 /* Scores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scores.swift; sourceTree = "<group>"; };
 		E14EF3942B3E0120005C79E9 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		E17DBD702B86DE0400718084 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E1826FBC2B3CEC9D002C20A0 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		E192C1ED2B412EED000A31FC /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		E192C1EF2B414BDC000A31FC /* SportViewGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportViewGesture.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		E198438F2B41C39B009E396D /* SportPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportPreference.swift; sourceTree = "<group>"; };
 		E19843912B41D17E009E396D /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		E19843932B41DECA009E396D /* ItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemList.swift; sourceTree = "<group>"; };
+		E1B38C2B2B898062000470C9 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		E1CE88742B3FD6E8003A1A21 /* SportToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportToolBar.swift; sourceTree = "<group>"; };
 		E1DB39682B3F55A40048C40E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		E1F2A99C2B3F607A002F5093 /* sportData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sportData.json; sourceTree = "<group>"; };
@@ -135,6 +140,7 @@
 		E1052FC32B3C83D50064EBC6 = {
 			isa = PBXGroup;
 			children = (
+				E11A95442B42865D00F9D1FE /* README.md */,
 				E1052FD42B3C83D60064EBC6 /* Score++ Watch App */,
 				E1052FE52B3C83D70064EBC6 /* Score++ Watch AppTests */,
 				E1052FEF2B3C83D70064EBC6 /* Score++ Watch AppUITests */,
@@ -157,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				E1052FD92B3C83D70064EBC6 /* Assets.xcassets */,
+				E1B38C2A2B898049000470C9 /* Extension */,
 				E10530052B3C8C7B0064EBC6 /* Model */,
 				E1052FDB2B3C83D70064EBC6 /* Preview Content */,
 				E1DB39612B3F55260048C40E /* Resources */,
@@ -207,6 +214,7 @@
 		E10530062B3C8C970064EBC6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E17DBD702B86DE0400718084 /* SettingsView.swift */,
 				E1052FD72B3C83D60064EBC6 /* ContentView.swift */,
 				E1826FBE2B3CEE8C002C20A0 /* Helper */,
 				E14EF3932B3E0111005C79E9 /* Score */,
@@ -244,6 +252,14 @@
 				E19843932B41DECA009E396D /* ItemList.swift */,
 			);
 			path = Sports;
+			sourceTree = "<group>";
+		};
+		E1B38C2A2B898049000470C9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1B38C2B2B898062000470C9 /* Extentions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E1DB39612B3F55260048C40E /* Resources */ = {
@@ -336,7 +352,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					E1052FC92B3C83D60064EBC6 = {
 						CreatedOnToolsVersion = 15.1;
@@ -427,7 +443,9 @@
 				E192C1F02B414BDC000A31FC /* SportViewGesture.swift in Sources */,
 				E126C98E2B3FF0A7001CC626 /* MatchView.swift in Sources */,
 				E105300C2B3C91330064EBC6 /* SportList.swift in Sources */,
+				E17DBD712B86DE0400718084 /* SettingsView.swift in Sources */,
 				E19843902B41C39B009E396D /* SportPreference.swift in Sources */,
+				E1B38C2C2B898062000470C9 /* Extentions.swift in Sources */,
 				E10530042B3C8B0F0064EBC6 /* Sport.swift in Sources */,
 				E105300A2B3C8ECA0064EBC6 /* SportRow.swift in Sources */,
 				E14EF3922B3DEC8B005C79E9 /* Scores.swift in Sources */,
@@ -510,6 +528,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -571,6 +590,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
